@@ -31,7 +31,24 @@ app.use(function(req, res, next) {
 
 /// error handlers
 
+/**
+ * Development Settings
+ */
 
+if ('development' == app.get('env')) {
+// This will change in production since we'll be using the dist folder
+// This covers serving up the index page
+app.use(express.static(path.join(__dirname, '../client/.tmp')));
+app.use(express.static(path.join(__dirname, '../client/app')));
+app.use(express.errorHandler());
+}
+
+/**
+ * Production Settings
+ */
+if('production' == app.get('env')) {
+app.use(express.static(path.join(__dirname, '/dist')));
+}
 
 
 // production error handler
