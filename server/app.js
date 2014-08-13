@@ -21,7 +21,6 @@ app.use(bodyParser.urlencoded());
 app.use(cookieParser());
 
 
-
 /// catch 404 and forward to error handler
 app.use(function(req, res, next) {
     var err = new Error('Not Found');
@@ -30,10 +29,6 @@ app.use(function(req, res, next) {
 });
 
 /// error handlers
-
-/**
- * Development Settings
- */
 
 if ('development' == app.get('env')) {
 // This will change in production since we'll be using the dist folder

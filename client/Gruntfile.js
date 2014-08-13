@@ -441,5 +441,7 @@ module.exports = function (grunt) {
     'newer:jshint',
     'test',
     'build'
-  ]);
+  ]),
+
+  grunt.loadNpmTasks('grunt-contrib-compass');
 };
