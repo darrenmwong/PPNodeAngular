@@ -5,7 +5,7 @@
  * @name clientApp.controller:MainCtrl
  * @description
  * # MainCtrl
- * Controller of the clientApp
+   * Controller of the clientApp
  */
 angular.module('clientApp')
   .controller('MainCtrl', function ($scope) {
