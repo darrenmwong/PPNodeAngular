@@ -1,5 +1,5 @@
 # Paw Prints Remake #
-* Remaking final project using different tech *
+*Remaking final project using different tech*
 - Angular.js
 - Node.js
 - Bower
